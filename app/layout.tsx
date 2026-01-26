@@ -1,3 +1,4 @@
+import React from "react"
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
@@ -7,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Atlas - The Complete Platform to Build the Web',
+  description: 'Everything you need to create, deploy, and scale modern web experiences. Fast, secure, and trusted by 5,000+ companies.',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { ArrowRight, Check, Zap, BarChart3, Shield, Globe, Users, Lightbulb, Sliders, Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { FakeDashboardPreview } from '@/components/fake-dashboard-preview'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -236,14 +237,7 @@ export default function Home() {
           </div>
 
           {/* Product preview / Dashboard mock */}
-          <div className="relative rounded-lg border border-border bg-card p-1 shadow-lg overflow-hidden">
-            <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-md flex items-center justify-center">
-              <div className="text-center">
-                <BarChart3 className="h-12 w-12 text-primary/50 mx-auto mb-3" />
-                <p className="text-sm text-muted-foreground">Dashboard preview</p>
-              </div>
-            </div>
-          </div>
+          <FakeDashboardPreview />
         </div>
       </section>
 
