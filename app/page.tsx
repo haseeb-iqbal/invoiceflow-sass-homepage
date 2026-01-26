@@ -140,30 +140,30 @@ export default function Home() {
       <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-8">
-            <Link href="/" className="text-xl font-bold tracking-tight">
+            <Link href="/" className="text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors">
               Atlas
             </Link>
             <div className="hidden md:flex gap-8">
-              <Link href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Features
               </Link>
-              <Link href="#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#how-it-works" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 How it works
               </Link>
-              <Link href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Pricing
               </Link>
-              <Link href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#faq" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 FAQ
               </Link>
             </div>
           </div>
           
           <div className="hidden md:flex items-center gap-4">
-            <button className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <button className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium">
               Sign in
             </button>
-            <Button className="rounded-full">
+            <Button className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-md">
               Start free
             </Button>
           </div>
@@ -206,32 +206,32 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 py-24 sm:px-6 lg:px-8">
+      <section className="hero-gradient relative overflow-hidden px-4 py-32 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           {/* Trust line */}
           <div className="mb-8 flex justify-center">
-            <div className="inline-block rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-              Trusted by 5,000+ companies worldwide
+            <div className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent border border-accent/20">
+              ✨ Trusted by 5,000+ companies worldwide
             </div>
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance leading-tight mb-6">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance leading-tight mb-6 text-foreground">
             The complete platform to build the web
           </h1>
 
           {/* Subtext */}
-          <p className="text-lg sm:text-xl text-muted-foreground text-balance mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground text-balance mb-10 leading-relaxed">
             Everything you need to create, deploy, and scale modern web experiences. From infrastructure to analytics, Atlas is your all-in-one solution.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button size="lg" className="rounded-full h-11">
+          <div className="flex flex-col sm:flex-row gap-4 mb-16">
+            <Button size="lg" className="rounded-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-md hover:shadow-lg transition-all">
               Get started
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full h-11 bg-transparent">
+            <Button size="lg" variant="outline" className="rounded-full h-12 border-2 border-primary text-primary hover:bg-primary/5 font-semibold transition-all bg-transparent">
               Watch demo
             </Button>
           </div>
@@ -278,11 +278,11 @@ export default function Home() {
             {features.map((feature, index) => {
               const Icon = feature.icon
               return (
-                <div key={index} className="group relative rounded-lg border border-border bg-card p-6 hover:border-primary/30 hover:shadow-md transition-all">
-                  <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3">
-                    <Icon className="h-5 w-5 text-primary" />
+                <div key={index} className="group relative rounded-lg border border-border bg-card p-6 hover:border-accent/40 hover:shadow-lg transition-all duration-300">
+                  <div className="mb-4 inline-flex rounded-lg bg-gradient-to-br from-primary/15 to-accent/10 p-3 group-hover:from-primary/20 group-hover:to-accent/15 transition-all">
+                    <Icon className="h-5 w-5 text-primary group-hover:text-accent transition-colors" />
                   </div>
-                  <h3 className="font-semibold text-lg mb-2">
+                  <h3 className="font-semibold text-lg mb-2 text-foreground">
                     {feature.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">
@@ -362,16 +362,17 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="rounded-lg border border-border bg-card p-8">
-                <p className="text-sm mb-6 text-foreground italic">
+              <div key={index} className="rounded-lg border border-border bg-card p-8 hover:border-accent/30 hover:shadow-md transition-all">
+                <div className="mb-4 text-accent text-lg">★★★★★</div>
+                <p className="text-sm mb-6 text-foreground">
                   "{testimonial.quote}"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center text-xs font-semibold text-primary">
+                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 flex items-center justify-center text-xs font-semibold text-primary">
                     {testimonial.initials}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold">
+                    <p className="text-sm font-semibold text-foreground">
                       {testimonial.author}
                     </p>
                     <p className="text-xs text-muted-foreground">
@@ -397,12 +398,12 @@ export default function Home() {
             </p>
 
             {/* Billing toggle */}
-            <div className="inline-flex rounded-full border border-border bg-card p-1">
+            <div className="inline-flex rounded-full border-2 border-border bg-card p-1.5 shadow-sm">
               <button
                 onClick={() => setBillingPeriod('monthly')}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
                   billingPeriod === 'monthly'
-                    ? 'bg-primary text-primary-foreground'
+                    ? 'bg-primary text-primary-foreground shadow-md'
                     : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
@@ -410,13 +411,14 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setBillingPeriod('annual')}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
                   billingPeriod === 'annual'
-                    ? 'bg-primary text-primary-foreground'
+                    ? 'bg-primary text-primary-foreground shadow-md'
                     : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 Annual
+                <span className="ml-2 text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full">Save 17%</span>
               </button>
             </div>
           </div>
@@ -426,22 +428,22 @@ export default function Home() {
             {pricingPlans.map((plan, index) => (
               <div
                 key={index}
-                className={`relative rounded-lg border transition-all ${
+                className={`relative rounded-lg border transition-all hover:shadow-lg ${
                   plan.highlighted
-                    ? 'border-primary bg-primary/5 md:scale-105 shadow-lg'
-                    : 'border-border bg-card'
+                    ? 'border-primary/50 bg-gradient-to-br from-primary/8 to-accent/5 md:scale-105 shadow-xl ring-1 ring-primary/10'
+                    : 'border-border bg-card hover:border-accent/30'
                 }`}
               >
                 {plan.highlighted && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                      Most popular
+                    <span className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-1.5 rounded-full text-xs font-semibold shadow-md">
+                      ★ Most popular
                     </span>
                   </div>
                 )}
 
                 <div className="p-8">
-                  <h3 className="text-xl font-bold mb-2">
+                  <h3 className="text-xl font-bold mb-2 text-foreground">
                     {plan.name}
                   </h3>
                   <p className="text-sm text-muted-foreground mb-6">
@@ -449,7 +451,7 @@ export default function Home() {
                   </p>
 
                   <div className="mb-6">
-                    <div className="text-4xl font-bold">
+                    <div className="text-4xl font-bold text-foreground">
                       {getPrice(plan)}
                     </div>
                     {plan.monthlyPrice && (
@@ -460,7 +462,11 @@ export default function Home() {
                   </div>
 
                   <Button
-                    className="w-full rounded-full mb-8"
+                    className={`w-full rounded-full mb-8 font-semibold transition-all ${
+                      plan.highlighted
+                        ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-md'
+                        : 'border-accent text-primary hover:bg-primary/5'
+                    }`}
                     variant={plan.highlighted ? 'default' : 'outline'}
                   >
                     {plan.monthlyPrice ? 'Start free trial' : 'Contact sales'}
@@ -468,8 +474,8 @@ export default function Home() {
 
                   <div className="space-y-3">
                     {plan.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-start gap-3 text-sm">
-                        <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                      <div key={idx} className="flex items-start gap-3 text-sm text-foreground">
+                        <Check className={`h-4 w-4 flex-shrink-0 mt-0.5 ${plan.highlighted ? 'text-accent' : 'text-primary'}`} />
                         <span>{feature}</span>
                       </div>
                     ))}
@@ -498,12 +504,10 @@ export default function Home() {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border border-border rounded-lg px-6"
+                className="border border-border rounded-lg px-6 hover:border-accent/30 transition-colors"
               >
-                <AccordionTrigger className="py-4 hover:no-underline">
-                  <span className="text-left font-semibold">
-                    {faq.question}
-                  </span>
+                <AccordionTrigger className="py-4 hover:no-underline text-foreground font-semibold hover:text-primary">
+                  {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-4">
                   {faq.answer}
@@ -515,20 +519,20 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="border-t border-border bg-primary text-primary-foreground px-4 py-24 sm:px-6 lg:px-8">
+      <section className="border-t border-border bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-4 py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
             Ready to get started?
           </h2>
-          <p className="text-lg mb-8 opacity-90">
+          <p className="text-lg mb-10 opacity-95">
             Join thousands of teams already using Atlas. Start your free 14-day trial today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="rounded-full bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+            <Button size="lg" className="rounded-full bg-primary-foreground text-primary hover:bg-primary-foreground/95 font-semibold shadow-lg">
               Get started free
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10 bg-transparent">
+            <Button size="lg" variant="outline" className="rounded-full text-primary-foreground border-2 border-primary-foreground/40 hover:bg-primary-foreground/15 bg-transparent font-semibold backdrop-blur-sm">
               Schedule a demo
             </Button>
           </div>
