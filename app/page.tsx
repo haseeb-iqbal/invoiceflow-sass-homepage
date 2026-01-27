@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { ArrowRight, Check, Zap, BarChart3, Shield, Globe, Users, Lightbulb, Sliders, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { FakeDashboardPreview } from '@/components/fake-dashboard-preview'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -160,6 +161,7 @@ export default function Home() {
           </div>
           
           <div className="hidden md:flex items-center gap-4">
+            <ThemeToggle />
             <button className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium">
               Sign in
             </button>
