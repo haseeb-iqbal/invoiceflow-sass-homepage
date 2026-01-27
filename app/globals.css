@@ -123,6 +123,17 @@
     @apply bg-background text-foreground;
   }
   
+  button,
+  a,
+  [role="button"],
+  [onclick],
+  [data-slot="button"],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    @apply cursor-pointer;
+  }
+  
   .hero-gradient {
     background: linear-gradient(135deg, var(--background) 0%, oklch(0.97 0.02 248) 100%);
   }
