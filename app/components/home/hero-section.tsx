@@ -6,15 +6,9 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="hero-gradient relative overflow-hidden px-4 py-32 sm:px-6 lg:px-8"
+      className="relative overflow-hidden px-4 py-32 sm:px-6 lg:px-8"
     >
       <div className="mx-auto max-w-4xl">
-        <div className="mb-8 flex justify-center">
-          <div className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent border border-accent/20">
-            ?" Trusted by 5,000+ companies worldwide
-          </div>
-        </div>
-
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance leading-tight mb-6 text-foreground">
           The complete platform to build the web
         </h1>
