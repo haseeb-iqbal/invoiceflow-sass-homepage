@@ -1,13 +1,31 @@
-import { stripeLogo } from "../logos";
+import { FictionalLogos } from "../logos";
 
 export function LogoCloud() {
   const logos = [
-    "StudioCo",
-    "Northside Consulting",
-    "BrightLabs",
-    "Vertex",
-    "Oak & Co",
-    "ClearPath",
+    {
+      name: "StudioCo",
+      svg: FictionalLogos[0],
+    },
+    {
+      name: "Northside Consulting",
+      svg: FictionalLogos[1],
+    },
+    {
+      name: "BrightLabs",
+      svg: FictionalLogos[2],
+    },
+    {
+      name: "Vertex",
+      svg: FictionalLogos[3],
+    },
+    {
+      name: "Oak & Co",
+      svg: FictionalLogos[4],
+    },
+    {
+      name: "ClearPath",
+      svg: FictionalLogos[5],
+    },
   ];
 
   return (
@@ -16,13 +34,14 @@ export function LogoCloud() {
         <p className="text-center text-sm text-muted-foreground mb-8">
           Trusted by industry leaders
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
           {logos.map((logo) => (
             <div
-              key={logo}
-              className="h-10 flex items-center justify-center text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              key={logo.name}
+              className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors opacity-70 hover:opacity-100"
             >
-              {logo}
+              <div className="flex items-center justify-center">{logo.svg}</div>
+              <span className="text-xs font-medium">{logo.name}</span>
             </div>
           ))}
         </div>

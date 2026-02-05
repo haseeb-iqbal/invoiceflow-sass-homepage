@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
@@ -46,10 +47,18 @@ export function Navbar() {
         <div className="flex items-center gap-8">
           <Link
             href="/"
-            className="text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors"
+            className="flex items-center gap-1 text-xl font-bold tracking-tight text-foreground transition-colors"
             onClick={() => scrollToSection("hero")}
           >
-            InvoiceFlow
+            <Image
+              src="/icon.svg"
+              alt="InvoiceFlow logo"
+              width={24}
+              height={24}
+              className="h-6 w-6"
+              priority
+            />
+            <span className="italic">InvoiceFlow</span>
           </Link>
           <div className="hidden md:flex gap-8">
             <Link
