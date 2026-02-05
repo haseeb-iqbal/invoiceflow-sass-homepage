@@ -1,31 +1,34 @@
 export function HowItWorksSection() {
   const steps = [
     {
-      number: '1',
-      title: 'Create your account',
-      description: 'Sign up with your email or GitHub. Takes less than 30 seconds.'
+      number: "1",
+      title: "Create your invoice",
+      description: "Add clients, line items, and payment terms.",
     },
     {
-      number: '2',
-      title: 'Configure your workspace',
-      description: 'Add your team, set up integrations, and configure your deployment preferences.'
+      number: "2",
+      title: "Send and track",
+      description: "Share invoices and track their status in real time.",
     },
     {
-      number: '3',
-      title: 'Deploy and scale',
-      description: 'Push your code and watch it deploy automatically. Scale globally with one click.'
-    }
-  ]
+      number: "3",
+      title: "Get paid",
+      description: "Accept payments and stay on top of your cash flow.",
+    },
+  ];
 
   return (
-    <section id="how-it-works" className="border-y border-border bg-muted/30 px-4 py-24 sm:px-6 lg:px-8">
+    <section
+      id="how-it-works"
+      className="border-y border-border bg-muted/30 px-4 py-24 sm:px-6 lg:px-8"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             Get started in minutes
           </h2>
           <p className="text-lg text-muted-foreground">
-            A simple, straightforward workflow to set up Atlas and start building.
+            A simple, straightforward workflow to create invoices and get paid.
           </p>
         </div>
 
@@ -37,9 +40,7 @@ export function HowItWorksSection() {
                   {step.number}
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg mb-2">
-                    {step.title}
-                  </h3>
+                  <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
                   <p className="text-sm text-muted-foreground">
                     {step.description}
                   </p>
@@ -53,5 +54,5 @@ export function HowItWorksSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

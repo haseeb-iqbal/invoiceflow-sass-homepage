@@ -1,51 +1,73 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { Check } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { useState } from "react";
+import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function PricingSection() {
-  const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'annual'>('monthly')
+  const [billingPeriod, setBillingPeriod] = useState<"monthly" | "annual">(
+    "monthly",
+  );
 
   const pricingPlans = [
     {
-      name: 'Starter',
-      monthlyPrice: 99,
-      annualPrice: 990,
-      description: 'Perfect for teams getting started',
-      features: ['Up to 5 team members', 'Basic analytics', '5GB storage', 'Community support', 'API access']
+      name: "Starter",
+      monthlyPrice: 19,
+      annualPrice: 190,
+      description: "Perfect for getting started",
+      features: [
+        "Up to 10 clients",
+        "Unlimited invoices",
+        "Payment tracking",
+        "Email support",
+      ],
     },
     {
-      name: 'Professional',
-      monthlyPrice: 299,
-      annualPrice: 2990,
-      description: 'For growing organizations',
-      features: ['Up to 50 team members', 'Advanced analytics', '500GB storage', 'Priority support', 'Custom integrations', 'SSO & 2FA'],
-      highlighted: true
+      name: "Professional",
+      monthlyPrice: 39,
+      annualPrice: 390,
+      description: "For growing businesses",
+      features: [
+        "Unlimited clients",
+        "Automated reminders",
+        "Cash flow analytics",
+        "Priority support",
+      ],
+      highlighted: true,
     },
     {
-      name: 'Enterprise',
+      name: "Business",
       monthlyPrice: null,
       annualPrice: null,
-      description: 'For large-scale deployments',
-      features: ['Unlimited team members', 'Custom analytics', 'Unlimited storage', '24/7 dedicated support', 'Custom SLA', 'On-premise option']
-    }
-  ]
+      description: "For larger teams",
+      features: [
+        "Multiple team members",
+        "Advanced reporting",
+        "Dedicated support",
+        "Custom integrations",
+      ],
+    },
+  ];
 
-  const getPrice = (plan: typeof pricingPlans[0]) => {
-    if (!plan.monthlyPrice) return 'Custom'
-    return billingPeriod === 'monthly' ? `$${plan.monthlyPrice}` : `$${plan.annualPrice}`
-  }
+  const getPrice = (plan: (typeof pricingPlans)[0]) => {
+    if (!plan.monthlyPrice) return "Custom";
+    return billingPeriod === "monthly"
+      ? `$${plan.monthlyPrice}`
+      : `$${plan.annualPrice}`;
+  };
 
-  const getAnnualSavings = (plan: typeof pricingPlans[0]) => {
-    if (!plan.monthlyPrice) return null
-    const monthlyTotal = plan.monthlyPrice * 12
-    const savings = monthlyTotal - plan.annualPrice
-    return savings > 0 ? Math.round((savings / monthlyTotal) * 100) : 0
-  }
+  const getAnnualSavings = (plan: (typeof pricingPlans)[0]) => {
+    if (!plan.monthlyPrice) return null;
+    const monthlyTotal = plan.monthlyPrice * 12;
+    const savings = monthlyTotal - plan.annualPrice;
+    return savings > 0 ? Math.round((savings / monthlyTotal) * 100) : 0;
+  };
 
   return (
-    <section id="pricing" className="border-y border-border bg-muted/30 px-4 py-24 sm:px-6 lg:px-8">
+    <section
+      id="pricing"
+      className="border-y border-border bg-muted/30 px-4 py-24 sm:px-6 lg:px-8"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
@@ -57,25 +79,27 @@ export function PricingSection() {
 
           <div className="inline-flex rounded-full border-2 border-border bg-card p-1.5 shadow-sm">
             <button
-              onClick={() => setBillingPeriod('monthly')}
+              onClick={() => setBillingPeriod("monthly")}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
-                billingPeriod === 'monthly'
-                  ? 'bg-primary text-primary-foreground shadow-md'
-                  : 'text-muted-foreground hover:text-foreground'
+                billingPeriod === "monthly"
+                  ? "bg-primary text-primary-foreground shadow-md"
+                  : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Monthly
             </button>
             <button
-              onClick={() => setBillingPeriod('annual')}
+              onClick={() => setBillingPeriod("annual")}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
-                billingPeriod === 'annual'
-                  ? 'bg-primary text-primary-foreground shadow-md'
-                  : 'text-muted-foreground hover:text-foreground'
+                billingPeriod === "annual"
+                  ? "bg-primary text-primary-foreground shadow-md"
+                  : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Annual
-              <span className="ml-2 text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full">Save 17%</span>
+              <span className="ml-2 text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full">
+                2 months free
+              </span>
             </button>
           </div>
         </div>
@@ -86,8 +110,8 @@ export function PricingSection() {
               key={index}
               className={`relative rounded-lg border transition-all hover:shadow-lg ${
                 plan.highlighted
-                  ? 'border-primary/50 bg-gradient-to-br from-primary/8 to-accent/5 md:scale-105 shadow-xl ring-1 ring-primary/10'
-                  : 'border-border bg-card hover:border-accent/30'
+                  ? "border-primary/50 bg-gradient-to-br from-primary/8 to-accent/5 md:scale-105 shadow-xl ring-1 ring-primary/10"
+                  : "border-border bg-card hover:border-accent/30"
               }`}
             >
               {plan.highlighted && (
@@ -112,7 +136,9 @@ export function PricingSection() {
                   </div>
                   {plan.monthlyPrice && (
                     <p className="text-xs text-muted-foreground mt-1">
-                      {billingPeriod === 'monthly' ? 'per month' : `per year ${getAnnualSavings(plan) ? `(Save ${getAnnualSavings(plan)}%)` : ''}`}
+                      {billingPeriod === "monthly"
+                        ? "per month"
+                        : `per year ${getAnnualSavings(plan) ? `(Save ${getAnnualSavings(plan)}%)` : ""}`}
                     </p>
                   )}
                 </div>
@@ -120,18 +146,23 @@ export function PricingSection() {
                 <Button
                   className={`w-full rounded-full mb-8 font-semibold transition-all ${
                     plan.highlighted
-                      ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-md'
-                      : 'border-accent text-primary hover:bg-primary/5'
+                      ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-md"
+                      : "border-accent text-primary hover:bg-primary/5"
                   }`}
-                  variant={plan.highlighted ? 'default' : 'outline'}
+                  variant={plan.highlighted ? "default" : "outline"}
                 >
-                  {plan.monthlyPrice ? 'Start free trial' : 'Contact sales'}
+                  {plan.monthlyPrice ? "Start free trial" : "Contact sales"}
                 </Button>
 
                 <div className="space-y-3">
                   {plan.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-start gap-3 text-sm text-foreground">
-                      <Check className={`h-4 w-4 flex-shrink-0 mt-0.5 ${plan.highlighted ? 'text-accent' : 'text-primary'}`} />
+                    <div
+                      key={idx}
+                      className="flex items-start gap-3 text-sm text-foreground"
+                    >
+                      <Check
+                        className={`h-4 w-4 flex-shrink-0 mt-0.5 ${plan.highlighted ? "text-accent" : "text-primary"}`}
+                      />
                       <span>{feature}</span>
                     </div>
                   ))}
@@ -142,5 +173,5 @@ export function PricingSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

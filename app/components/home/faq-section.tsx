@@ -1,28 +1,34 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export function FaqSection() {
   const faqs = [
     {
-      question: 'Can I switch plans anytime?',
-      answer: 'Yes! You can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.'
+      question: "Is there a free trial?",
+      answer: "Yes, try InvoiceFlow free for 14 days. No credit card required.",
     },
     {
-      question: 'What payment methods do you accept?',
-      answer: 'We accept all major credit cards (Visa, Mastercard, American Express), bank transfers, and cryptocurrency for Enterprise customers.'
+      question: "Can I export my invoices?",
+      answer: "Yes, export invoices as PDFs or CSV at any time.",
     },
     {
-      question: 'Is there a free trial available?',
-      answer: 'Absolutely. Start with a 14-day free trial with full access to all Professional features. No credit card required.'
+      question: "Do you support international clients?",
+      answer: "InvoiceFlow supports multiple currencies and regions.",
     },
     {
-      question: 'How do you handle data security?',
-      answer: 'We use end-to-end encryption, regular security audits, and maintain SOC 2 Type II compliance. All data is encrypted at rest and in transit.'
+      question: "Is my data secure?",
+      answer:
+        "We use industry-standard security practices to protect your data.",
     },
     {
-      question: 'What kind of support is included?',
-      answer: 'All plans include email support. Professional plans get priority support with 4-hour response times. Enterprise includes 24/7 dedicated support.'
-    }
-  ]
+      question: "Can I cancel anytime?",
+      answer: "Absolutely. No long-term contracts.",
+    },
+  ];
 
   return (
     <section id="faq" className="px-4 py-24 sm:px-6 lg:px-8">
@@ -32,7 +38,7 @@ export function FaqSection() {
             Frequently asked questions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Everything you need to know about Atlas.
+            Everything you need to know about InvoiceFlow.
           </p>
         </div>
 
@@ -54,5 +60,5 @@ export function FaqSection() {
         </Accordion>
       </div>
     </section>
-  )
+  );
 }

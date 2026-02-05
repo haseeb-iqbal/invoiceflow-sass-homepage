@@ -49,7 +49,7 @@ export function Navbar() {
             className="text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors"
             onClick={() => scrollToSection("hero")}
           >
-            Atlas
+            InvoiceFlow
           </Link>
           <div className="hidden md:flex gap-8">
             <Link
