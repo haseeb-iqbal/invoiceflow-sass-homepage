@@ -1,12 +1,14 @@
+import { stripeLogo } from "../logos";
+
 export function LogoCloud() {
   const logos = [
-    'TechCorp',
-    'DataFlow',
-    'CloudSync',
-    'NeuralWave',
-    'MetaGrid',
-    'VelocityAI'
-  ]
+    "TechCorp",
+    "DataFlow",
+    "CloudSync",
+    "NeuralWave",
+    "MetaGrid",
+    "VelocityAI",
+  ];
 
   return (
     <section className="border-y border-border bg-muted/30 px-4 py-12 sm:px-6 lg:px-8">
@@ -26,5 +28,5 @@ export function LogoCloud() {
         </div>
       </div>
     </section>
-  )
+  );
 }
