@@ -1,7 +1,15 @@
+"use client";
+import dynamic from "next/dynamic";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { World } from "@/components/ui/globe";
 import { DottedGlowBackground } from "@/components/ui/dotted-glow-background";
+
+const World = dynamic(
+  () => import("@/components/ui/globe").then((mod) => mod.World),
+  {
+    ssr: false,
+  },
+);
 
 export function HeroSection() {
   return (
