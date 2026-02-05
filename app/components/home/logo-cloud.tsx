@@ -2,12 +2,12 @@ import { stripeLogo } from "../logos";
 
 export function LogoCloud() {
   const logos = [
-    "TechCorp",
-    "DataFlow",
-    "CloudSync",
-    "NeuralWave",
-    "MetaGrid",
-    "VelocityAI",
+    "StudioCo",
+    "Northside Consulting",
+    "BrightLabs",
+    "Vertex",
+    "Oak & Co",
+    "ClearPath",
   ];
 
   return (
