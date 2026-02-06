@@ -133,4 +133,9 @@
   input[type="reset"] {
     @apply cursor-pointer;
   }
+
+  /* Swiper continuous linear motion */
+  .logo-swiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
 }
