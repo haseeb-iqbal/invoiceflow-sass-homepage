@@ -7,8 +7,8 @@ export const FictionalLogos = [
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M24.6625 0C29.5499 0.000157557 33.512 3.87456 33.5121 8.65224C33.5121 8.91866 33.4997 9.18398 33.4824 9.44828H40.9366C48.1871 9.44828 51.0342 18.6407 45.0014 22.5723L37.1131 27.7122C35.415 28.8193 35.8805 31.3743 37.8654 31.84C38.5143 31.9921 39.1997 31.8658 39.7475 31.4934L44.3242 28.1927C44.4979 28.0675 44.7074 28 44.9225 28H57.4922C57.9872 28 58.1886 28.6281 57.7838 28.909L44.4783 38.1397C41.99 39.8319 38.8796 40.4048 35.9321 39.7133C26.9186 37.5986 24.8061 26.0015 32.5185 20.9749L37.7818 17.5457H29.7048H24.5358C23.0515 17.5457 21.6504 17.1926 20.4171 16.5691C21.7314 17.4535 24.9805 18.4377 27.7216 18.6251C27.9658 18.6251 28.3625 18.8385 27.8901 19.3183L11.2952 35.7067C11.105 35.8945 10.847 36 10.578 36H0.507884C0.056246 36 -0.169872 35.4613 0.149574 35.1463L19.5219 16.0472C17.1349 14.4709 15.5652 11.8013 15.5649 8.77349C15.5649 3.92875 19.5825 0 24.5385 0H24.6625ZM24.8419 6.74915C23.6982 6.74915 22.771 7.35337 22.771 8.09871C22.7715 8.71319 23.4024 9.23009 24.2648 9.39292C24.3487 9.42847 24.4413 9.44828 24.5385 9.44828H25.1533C25.1544 9.44225 25.1535 9.43586 25.1546 9.42983C26.1495 9.33152 26.9122 8.77441 26.9127 8.09871C26.9127 7.35337 25.9855 6.74915 24.8419 6.74915Z"
       fill="#002A3D"
     ></path>
@@ -185,26 +185,26 @@ export const FictionalLogos = [
       fill="#283841"
     ></path>
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M99.8389 72.4216C98.1415 72.4216 96.6661 72.0429 95.4126 71.2857C95.265 71.1915 95.1214 71.0921 94.9818 70.9877V79.394H89.2628V52.7971H93.5324L94.097 54.7045C94.5163 54.2584 94.9809 53.8707 95.491 53.5413C96.7444 52.7318 98.2068 52.327 99.8781 52.327C101.628 52.327 103.155 52.7579 104.461 53.6196C105.793 54.4553 106.824 55.6304 107.556 57.145C108.313 58.6596 108.692 60.4092 108.692 62.3939C108.692 64.3525 108.313 66.0891 107.556 67.6036C106.798 69.1182 105.754 70.3063 104.422 71.1682C103.09 72.0038 101.562 72.4216 99.8389 72.4216ZM98.7813 67.0552C99.9565 67.0552 100.923 66.6243 101.68 65.7626C102.463 64.8747 102.855 63.7518 102.855 62.3939C102.855 61.0098 102.463 59.8869 101.68 59.0252C100.923 58.1373 99.9565 57.6934 98.7813 57.6934C97.6323 57.6934 96.6661 58.1373 95.8827 59.0252C95.0993 59.8869 94.7076 60.9968 94.7076 62.3547C94.7076 63.7387 95.0993 64.8747 95.8827 65.7626C96.6661 66.6243 97.6323 67.0552 98.7813 67.0552Z"
       fill="#283841"
     ></path>
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M68.603 72.4216C66.6183 72.4216 64.8687 72.0038 63.3541 71.1682C61.8395 70.3063 60.6643 69.1182 59.8287 67.6036C58.993 66.0891 58.5752 64.3525 58.5752 62.3939C58.5752 60.4092 58.993 58.6596 59.8287 57.145C60.6643 55.6304 61.8395 54.4553 63.3541 53.6196C64.8687 52.7579 66.6183 52.327 68.603 52.327C70.6137 52.327 72.3764 52.7579 73.891 53.6196C75.4056 54.4553 76.5807 55.6304 77.4164 57.145C78.2781 58.6596 78.709 60.4092 78.709 62.3939C78.709 64.3525 78.2781 66.0891 77.4164 67.6036C76.5807 69.1182 75.4056 70.3063 73.891 71.1682C72.3764 72.0038 70.6137 72.4216 68.603 72.4216ZM68.603 66.8593C69.8825 66.8593 70.914 66.4547 71.6974 65.6451C72.507 64.8094 72.9117 63.7256 72.9117 62.3939C72.9117 61.0359 72.507 59.9391 71.6974 59.1036C70.914 58.2679 69.8825 57.85 68.603 57.85C67.3756 57.85 66.3572 58.2679 65.5476 59.1036C64.7642 59.913 64.3725 60.9968 64.3725 62.3547C64.3725 63.7126 64.7642 64.8094 65.5476 65.6451C66.3572 66.4547 67.3756 66.8593 68.603 66.8593Z"
       fill="#283841"
     ></path>
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M43.9514 79.3157C45.022 79.6291 46.0666 79.7857 47.085 79.7857C49.148 79.7857 50.9107 79.3809 52.3731 78.5715C53.8616 77.7619 54.9975 76.5606 55.7809 74.9677C56.5644 73.3748 56.9561 71.4554 56.9561 69.2097V52.7971H52.6865L52.0548 54.8968C51.5859 54.3574 51.0522 53.8925 50.4537 53.5021C49.2525 52.7187 47.8554 52.327 46.2625 52.327C44.565 52.327 43.0504 52.7318 41.7186 53.5413C40.3868 54.3246 39.3423 55.4214 38.585 56.8316C37.8538 58.2156 37.4882 59.8217 37.4882 61.6496C37.4882 63.4515 37.8668 65.0576 38.6241 66.4677C39.4075 67.8777 40.4521 68.9745 41.7578 69.758C43.0896 70.5414 44.6172 70.9332 46.3408 70.9332C47.9598 70.9332 49.3569 70.5676 50.532 69.8364C50.6559 69.7582 50.7769 69.6768 50.8949 69.5921C50.9401 69.5596 50.9849 69.5267 51.0292 69.4932C51.0996 69.4402 51.1689 69.3859 51.2371 69.3304V70.4239C51.2371 71.9647 50.8585 73.1136 50.1012 73.8709C49.3439 74.6544 48.3646 75.0461 47.1634 75.0461C46.1188 75.0461 45.257 74.824 44.5781 74.3802C43.9252 73.9362 43.2724 73.205 42.6195 72.1866L38.5066 74.3018L38.82 74.9677C39.4206 76.1429 40.1649 77.0829 41.0527 77.788C41.9406 78.5192 42.9068 79.0284 43.9514 79.3157ZM50.3754 64.705C49.6181 65.5145 48.6388 65.9193 47.4376 65.9193C46.2363 65.9193 45.244 65.5145 44.4606 64.705C43.7033 63.8954 43.3246 62.877 43.3246 61.6496C43.3246 60.3701 43.7033 59.3255 44.4606 58.5159C45.244 57.7065 46.2363 57.3017 47.4376 57.3017C48.6388 57.3017 49.6181 57.7065 50.3754 58.5159C51.1588 59.3255 51.5505 60.3701 51.5505 61.6496C51.5505 62.877 51.1588 63.8954 50.3754 64.705Z"
       fill="#283841"
     ></path>
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M26.9626 72.4216C24.9779 72.4216 23.2283 72.0038 21.7137 71.1682C20.1991 70.3063 19.0239 69.1182 18.1883 67.6036C17.3526 66.0891 16.9348 64.3525 16.9348 62.3939C16.9348 60.4092 17.3526 58.6596 18.1883 57.145C19.0239 55.6304 20.1991 54.4553 21.7137 53.6196C23.2283 52.7579 24.9779 52.327 26.9626 52.327C28.9733 52.327 30.736 52.7579 32.2506 53.6196C33.7652 54.4553 34.9403 55.6304 35.776 57.145C36.6378 58.6596 37.0686 60.4092 37.0686 62.3939C37.0686 64.3525 36.6378 66.0891 35.776 67.6036C34.9403 69.1182 33.7652 70.3063 32.2506 71.1682C30.736 72.0038 28.9733 72.4216 26.9626 72.4216ZM26.9626 66.8593C28.2421 66.8593 29.2736 66.4547 30.057 65.6451C30.8666 64.8094 31.2713 63.7256 31.2713 62.3939C31.2713 61.0359 30.8666 59.9391 30.057 59.1036C29.2736 58.2679 28.2421 57.85 26.9626 57.85C25.7352 57.85 24.7168 58.2679 23.9072 59.1036C23.1238 59.913 22.7321 60.9968 22.7321 62.3547C22.7321 63.7126 23.1238 64.8094 23.9072 65.6451C24.7168 66.4547 25.7352 66.8593 26.9626 66.8593Z"
       fill="#283841"
     ></path>
@@ -221,12 +221,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint1_linear_5130_718"
@@ -236,12 +236,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint2_linear_5130_718"
@@ -251,12 +251,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint3_linear_5130_718"
@@ -266,12 +266,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint4_linear_5130_718"
@@ -281,12 +281,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint5_linear_5130_718"
@@ -296,12 +296,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint6_linear_5130_718"
@@ -311,12 +311,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint7_linear_5130_718"
@@ -326,12 +326,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint8_linear_5130_718"
@@ -341,12 +341,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint9_linear_5130_718"
@@ -356,12 +356,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint10_linear_5130_718"
@@ -371,12 +371,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint11_linear_5130_718"
@@ -386,12 +386,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint12_linear_5130_718"
@@ -401,12 +401,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint13_linear_5130_718"
@@ -416,12 +416,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint14_linear_5130_718"
@@ -431,12 +431,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint15_linear_5130_718"
@@ -446,12 +446,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
       <linearGradient
         id="paint16_linear_5130_718"
@@ -461,12 +461,12 @@ export const FictionalLogos = [
         y2="18.3432"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0046F9"></stop>
-        <stop offset="0.197917" stop-color="#16DBF6"></stop>
-        <stop offset="0.401042" stop-color="#FFE713"></stop>
-        <stop offset="0.604167" stop-color="#FF7917"></stop>
-        <stop offset="0.802083" stop-color="#FB0000"></stop>
-        <stop offset="1" stop-color="#B30000"></stop>
+        <stop stopColor="#0046F9"></stop>
+        <stop offset="0.197917" stopColor="#16DBF6"></stop>
+        <stop offset="0.401042" stopColor="#FFE713"></stop>
+        <stop offset="0.604167" stopColor="#FF7917"></stop>
+        <stop offset="0.802083" stopColor="#FB0000"></stop>
+        <stop offset="1" stopColor="#B30000"></stop>
       </linearGradient>
     </defs>
   </svg>,
@@ -566,10 +566,11 @@ export const FictionalLogos = [
       fill="#00DC33"
     ></path>
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M28.0441 7.60927C28.8868 6.80331 30.2152 6.79965 31.0622 7.58229L31.1425 7.66005L31.4164 7.94729C34.1911 10.9318 35.2251 14.4098 34.9599 17.8065C34.6908 21.2511 33.1012 24.4994 30.8836 27.0664C28.6673 29.6316 25.7084 31.6519 22.51 32.5287C19.2714 33.4164 15.7294 33.1334 12.6547 30.9629C10.0469 29.1218 9.05406 26.1465 8.98661 23.2561C7.52323 22.5384 5.98346 21.6463 4.36789 20.5615L3.941 20.2716L3.85006 20.206C2.93285 19.5053 2.72313 18.2084 3.39161 17.2564C4.06029 16.3043 5.36233 16.046 6.34665 16.6512L6.44134 16.7126L6.83024 16.9771C7.79805 17.6269 8.72153 18.1903 9.59966 18.6767C10.1661 16.6889 11.1047 14.7802 12.3413 13.207C14.1938 10.8501 16.9713 8.96525 20.374 9.24647C23.439 9.49995 25.7036 11.081 26.8725 13.3122C28.0044 15.4728 28.0211 18.0719 27.0319 20.307C26.0234 22.5857 23.976 24.484 21.0309 25.2662C18.9114 25.8291 16.4284 25.7905 13.6267 25.0367V25.0377C12.5115 24.7375 11.3427 24.323 10.1212 23.7846C9.8472 23.6638 9.60873 23.8483 10.1212 24.1686C11.5636 25.1924 13.5956 26.0505 14.1836 26.3385C14.4615 26.788 14.8061 27.1568 15.2011 27.4356C17.0188 28.7188 19.1451 28.9539 21.3396 28.3523C23.5743 27.7397 25.8141 26.2625 27.5514 24.2516C29.2873 22.2423 30.4065 19.8348 30.5909 17.4727C30.765 15.2439 30.1218 12.9543 28.1842 10.8736L27.9927 10.6731L27.9162 10.5906C27.1538 9.72748 27.2018 8.41516 28.0441 7.60927ZM20.0092 13.5651C18.6033 13.4489 17.1196 14.189 15.8013 15.8662C14.7973 17.1436 14.0376 18.8033 13.6503 20.5112C16.4093 21.4544 18.4655 21.4608 19.8942 21.0814C21.5481 20.6422 22.5399 19.6477 23.0172 18.5693C23.5137 17.4472 23.4628 16.2245 22.9813 15.3055C22.5369 14.4571 21.6422 13.7002 20.0092 13.5651Z"
       fill="#ffffff"
     ></path>
   </svg>,
 ];
+
