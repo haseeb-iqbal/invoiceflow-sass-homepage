@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import { ArrowRight } from "lucide-react";
+import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { DottedGlowBackground } from "@/components/ui/dotted-glow-background";
 
@@ -12,6 +13,7 @@ const World = dynamic(
 );
 
 export function HeroSection() {
+  const { theme } = useTheme();
   return (
     <section
       id="hero"
@@ -62,20 +64,22 @@ export function HeroSection() {
         </div>
         <div className="w-full max-w-2xl h-[400px] lg:h-[500px]">
           <World
+            key={theme}
             globeConfig={{
               pointSize: 4,
-              globeColor: "#062056",
+              globeColor: theme === "dark" ? "#062056" : "#85beff",
               showAtmosphere: true,
-              atmosphereColor: "#FFFFFF",
+              atmosphereColor: theme === "dark" ? "#FFFFFF" : "#7dd3fc",
               atmosphereAltitude: 0.1,
-              emissive: "#062056",
-              emissiveIntensity: 0.1,
+              emissive: theme === "dark" ? "#062056" : "#e0f2fe",
+              emissiveIntensity: theme === "dark" ? 0.1 : 0.25,
               shininess: 0.9,
-              polygonColor: "rgba(255,255,255,0.7)",
-              ambientLight: "#38bdf8",
-              directionalLeftLight: "#ffffff",
-              directionalTopLight: "#ffffff",
-              pointLight: "#ffffff",
+              polygonColor:
+                theme === "dark" ? "rgba(255,255,255,0.7)" : "#000000",
+              ambientLight: theme === "dark" ? "#38bdf8" : "#7dd3fc",
+              directionalLeftLight: theme === "dark" ? "#ffffff" : "#ffffff",
+              directionalTopLight: theme === "dark" ? "#ffffff" : "#ffffff",
+              pointLight: theme === "dark" ? "#ffffff" : "#38bdf8",
               arcTime: 2000,
               arcLength: 0.9,
               rings: 3,
@@ -92,7 +96,7 @@ export function HeroSection() {
                 endLat: 51.5074,
                 endLng: -0.1278,
                 arcAlt: 0.3,
-                color: "#3b82f6",
+                color: theme === "dark" ? "#3b82f6" : "#3b82f6",
               },
               {
                 order: 2,
@@ -101,7 +105,7 @@ export function HeroSection() {
                 endLat: 35.6762,
                 endLng: 139.6503,
                 arcAlt: 0.5,
-                color: "#06b6d4",
+                color: theme === "dark" ? "#06b6d4" : "#06b6d4",
               },
               {
                 order: 3,
@@ -110,7 +114,7 @@ export function HeroSection() {
                 endLat: -33.8688,
                 endLng: 151.2093,
                 arcAlt: 0.7,
-                color: "#ec4899",
+                color: theme === "dark" ? "#ec4899" : "#f472b6",
               },
               {
                 order: 4,
@@ -119,7 +123,43 @@ export function HeroSection() {
                 endLat: 52.52,
                 endLng: 13.405,
                 arcAlt: 0.4,
-                color: "#ec4899",
+                color: theme === "dark" ? "#ec4899" : "#f472b6",
+              },
+              {
+                order: 5,
+                startLat: 35.6762,
+                startLng: 139.6503,
+                endLat: 25.2048,
+                endLng: 55.2708,
+                arcAlt: 0.6,
+                color: theme === "dark" ? "#8b5cf6" : "#a78bfa",
+              },
+              {
+                order: 6,
+                startLat: -23.5505,
+                startLng: -46.6333,
+                endLat: -33.9249,
+                endLng: 18.4241,
+                arcAlt: 0.5,
+                color: theme === "dark" ? "#10b981" : "#34d399",
+              },
+              {
+                order: 7,
+                startLat: 19.076,
+                startLng: 72.8777,
+                endLat: -37.8136,
+                endLng: 144.9631,
+                arcAlt: 0.8,
+                color: theme === "dark" ? "#f59e0b" : "#fbbf24",
+              },
+              {
+                order: 8,
+                startLat: 43.6532,
+                startLng: -79.3832,
+                endLat: 48.8566,
+                endLng: 2.3522,
+                arcAlt: 0.4,
+                color: theme === "dark" ? "#06b6d4" : "#06b6d4",
               },
             ]}
           />
