@@ -1,3 +1,7 @@
+"use client";
+import * as motion from "motion/react-client";
+import { stagger } from "motion";
+
 export function HowItWorksSection() {
   const steps = [
     {
@@ -17,6 +21,24 @@ export function HowItWorksSection() {
     },
   ];
 
+  const stepTransition = {
+    duration: 0.4,
+    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+  };
+
+  const stepContainerVariant = {
+    show: {
+      transition: {
+        staggerChildren: 0.4,
+      },
+    },
+  };
+
+  const stepVariants = {
+    hidden: { opacity: 0, scale: 0 },
+    show: { opacity: 1, scale: 1 },
+  };
+
   return (
     <section
       id="how-it-works"
@@ -32,9 +54,20 @@ export function HowItWorksSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <motion.div
+          variants={stepContainerVariant}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-3 gap-8"
+        >
           {steps.map((step, index) => (
-            <div key={index} className="relative">
+            <motion.div
+              variants={stepVariants}
+              transition={stepTransition}
+              key={index}
+              className="relative"
+            >
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-lg">
                   {step.number}
@@ -49,9 +82,9 @@ export function HowItWorksSection() {
               {index < 2 && (
                 <div className="hidden md:block absolute top-6 -right-4 w-8 h-0.5 bg-border" />
               )}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
