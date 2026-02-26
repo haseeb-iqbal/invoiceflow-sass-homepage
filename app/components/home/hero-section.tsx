@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import { ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import { DottedGlowBackground } from "@/components/ui/dotted-glow-background";
 
 const World = dynamic(
   () => import("@/components/ui/globe").then((mod) => mod.World),
@@ -19,20 +18,6 @@ export function HeroSection() {
       id="hero"
       className="relative overflow-hidden px-4 pt-12 pb-10 sm:px-6 lg:px-8 flex"
     >
-      <DottedGlowBackground
-        className="pointer-events-none mask-radial-to-90% mask-radial-at-center opacity-20 dark:opacity-100"
-        opacity={1}
-        gap={40}
-        radius={7}
-        colorLightVar="--color-neutral-500"
-        glowColorLightVar="--color-neutral-600"
-        colorDarkVar="--color-neutral-800"
-        glowColorDarkVar="--color-sky-800"
-        backgroundOpacity={0}
-        speedMin={0.05}
-        speedMax={0.2}
-        speedScale={1}
-      />
       <div className="mx-auto max-w-6xl flex flex-col lg:flex-row items-center lg:items-start lg:space-x-16 z-1">
         <div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance leading-tight mb-6 text-foreground ">
