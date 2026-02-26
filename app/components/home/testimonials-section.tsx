@@ -1,3 +1,5 @@
+import { CometCard } from "@/components/ui/comet-card";
+
 export function TestimonialsSection() {
   const testimonials = [
     {
@@ -35,28 +37,23 @@ export function TestimonialsSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="rounded-lg border border-border bg-card p-8 hover:border-accent/30 hover:shadow-md transition-all"
-            >
-              <div className="mb-4 text-accent text-lg">?.?.?.?.?.</div>
-              <p className="text-sm mb-6 text-foreground">
-                "{testimonial.quote}"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 flex items-center justify-center text-xs font-semibold text-primary">
-                  {testimonial.initials}
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-foreground">
-                    {testimonial.author}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {testimonial.role}
-                  </p>
+            <CometCard key={index}>
+              <div className="rounded-lg border border-border bg-card p-8 hover:border-accent/30 hover:shadow-md transition-all w-full bg-cover bg-center">
+                <div className="absolute inset-0  bg-[url('https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_640.jpg')] bg-blue-100 bg-blend-multiply before:grayscale w-full h-full bg-cover bg-center opacity-10 hover:opacity-15 rounded-lg"></div>
+
+                <p className=" mb-6 text-foreground">"{testimonial.quote}"</p>
+                <div className="flex items-center gap-3 justify-end">
+                  <div className="flex items-end flex-col">
+                    <p className=" font-semibold text-foreground">
+                      {testimonial.author}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.role}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </CometCard>
           ))}
         </div>
       </div>
