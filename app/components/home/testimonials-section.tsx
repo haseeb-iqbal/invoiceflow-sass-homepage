@@ -7,6 +7,16 @@ export function TestimonialsSection() {
       author: "Sarah Chen",
       role: "Freelance Designer",
       initials: "SC",
+      image:
+        "https://pixabay.com/images/download/kemdauart-portrait-5601950_640.jpg",
+    },
+    {
+      quote: `Tracking overdue invoices used to be a nightmare. Now it's effortless.`,
+      author: "Emma Williams",
+      role: "Consultant",
+      initials: "AK",
+      image:
+        "https://pixabay.com/images/download/fanofthe5-girl-4806746_640.jpg",
     },
     {
       quote:
@@ -14,12 +24,8 @@ export function TestimonialsSection() {
       author: "Mark Robinson",
       role: "Studio Owner",
       initials: "MR",
-    },
-    {
-      quote: `Tracking overdue invoices used to be a nightmare. Now it's effortless.`,
-      author: "Aisha Khan",
-      role: "Consultant",
-      initials: "AK",
+      image:
+        "https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_640.jpg",
     },
   ];
 
@@ -39,9 +45,20 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <CometCard key={index}>
               <div className="rounded-lg border border-border bg-card p-8 hover:border-accent/30 hover:shadow-md transition-all w-full bg-cover bg-center">
-                <div className="absolute inset-0  bg-[url('https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_640.jpg')] bg-blue-100 bg-blend-multiply before:grayscale w-full h-full bg-cover bg-center opacity-10 hover:opacity-15 rounded-lg"></div>
+                <div className="absolute inset-0 rounded-lg overflow-hidden">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-15 "
+                    style={{
+                      backgroundImage: `url('${testimonial.image}')`,
+                      filter: "grayscale(100%)",
+                    }}
+                  ></div>
+                  <div className="absolute inset-0 bg-blue-500/40 mix-blend-multiply"></div>
+                </div>
 
-                <p className=" mb-6 text-foreground">"{testimonial.quote}"</p>
+                <p className=" mb-6 text-foreground z-10 relative text-lg leading-relaxed">
+                  "{testimonial.quote}"
+                </p>
                 <div className="flex items-center gap-3 justify-end">
                   <div className="flex items-end flex-col">
                     <p className=" font-semibold text-foreground">
