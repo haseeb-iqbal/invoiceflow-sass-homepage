@@ -6,7 +6,6 @@ export function TestimonialsSection() {
       quote: `InvoiceFlow cut our average payment time in half. It's simple, clean, and does exactly what we need.`,
       author: "Sarah Chen",
       role: "Freelance Designer",
-      initials: "SC",
       image:
         "https://pixabay.com/images/download/kemdauart-portrait-5601950_640.jpg",
     },
@@ -14,7 +13,6 @@ export function TestimonialsSection() {
       quote: `Tracking overdue invoices used to be a nightmare. Now it's effortless.`,
       author: "Emma Williams",
       role: "Consultant",
-      initials: "AK",
       image:
         "https://pixabay.com/images/download/fanofthe5-girl-4806746_640.jpg",
     },
@@ -23,7 +21,6 @@ export function TestimonialsSection() {
         "Finally, an invoicing tool that doesn't feel bloated. The dashboard alone is worth it.",
       author: "Mark Robinson",
       role: "Studio Owner",
-      initials: "MR",
       image:
         "https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_640.jpg",
     },
