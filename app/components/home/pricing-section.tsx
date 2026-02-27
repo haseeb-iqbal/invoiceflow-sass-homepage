@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BillingToggle from "../billing-toggle";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 export function PricingSection() {
   const [billingPeriod, setBillingPeriod] = useState<"monthly" | "annual">(
@@ -93,13 +94,28 @@ export function PricingSection() {
               }`}
             >
               {plan.highlighted && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                   <span className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-1.5 rounded-full text-xs font-semibold shadow-md">
                     Most popular
                   </span>
                 </div>
               )}
-
+              {plan.highlighted && (
+                <>
+                  <BorderBeam
+                    duration={6}
+                    size={400}
+                    className="from-transparent via-red-500 to-transparent"
+                  />
+                  <BorderBeam
+                    duration={6}
+                    delay={3}
+                    size={400}
+                    borderWidth={2}
+                    className="from-transparent via-blue-500 to-transparent"
+                  />
+                </>
+              )}
               <div className="p-8">
                 <h3 className="text-xl font-bold mb-2 text-foreground">
                   {plan.name}
