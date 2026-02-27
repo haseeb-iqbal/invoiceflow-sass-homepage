@@ -66,7 +66,7 @@ export function HeroSection() {
               directionalTopLight: theme === "dark" ? "#ffffff" : "#ffffff",
               pointLight: theme === "dark" ? "#ffffff" : "#38bdf8",
               arcTime: 2000,
-              arcLength: 0.9,
+              arcLength: 0.6,
               rings: 3,
               maxRings: 3,
               initialPosition: { lat: 22.3193, lng: 114.1694 },
@@ -80,7 +80,7 @@ export function HeroSection() {
                 startLng: -74.006,
                 endLat: 51.5074,
                 endLng: -0.1278,
-                arcAlt: 0.3,
+                arcAlt: 0.15, // Reduced from 0.3
                 color: theme === "dark" ? "#3b82f6" : "#3b82f6",
               },
               {
@@ -89,7 +89,7 @@ export function HeroSection() {
                 startLng: -0.1278,
                 endLat: 35.6762,
                 endLng: 139.6503,
-                arcAlt: 0.5,
+                arcAlt: 0.25, // Reduced from 0.5
                 color: theme === "dark" ? "#06b6d4" : "#06b6d4",
               },
               {
@@ -98,7 +98,7 @@ export function HeroSection() {
                 startLng: -122.4194,
                 endLat: -33.8688,
                 endLng: 151.2093,
-                arcAlt: 0.7,
+                arcAlt: 0.35, // Reduced from 0.7
                 color: theme === "dark" ? "#ec4899" : "#f472b6",
               },
               {
@@ -107,7 +107,7 @@ export function HeroSection() {
                 startLng: 103.8198,
                 endLat: 52.52,
                 endLng: 13.405,
-                arcAlt: 0.4,
+                arcAlt: 0.2, // Reduced from 0.4
                 color: theme === "dark" ? "#ec4899" : "#f472b6",
               },
               {
@@ -116,7 +116,7 @@ export function HeroSection() {
                 startLng: 139.6503,
                 endLat: 25.2048,
                 endLng: 55.2708,
-                arcAlt: 0.6,
+                arcAlt: 0.3, // Reduced from 0.6
                 color: theme === "dark" ? "#8b5cf6" : "#a78bfa",
               },
               {
@@ -125,7 +125,7 @@ export function HeroSection() {
                 startLng: -46.6333,
                 endLat: -33.9249,
                 endLng: 18.4241,
-                arcAlt: 0.5,
+                arcAlt: 0.25, // Reduced from 0.5
                 color: theme === "dark" ? "#10b981" : "#34d399",
               },
               {
@@ -134,7 +134,7 @@ export function HeroSection() {
                 startLng: 72.8777,
                 endLat: -37.8136,
                 endLng: 144.9631,
-                arcAlt: 0.8,
+                arcAlt: 0.4, // Reduced from 0.8
                 color: theme === "dark" ? "#f59e0b" : "#fbbf24",
               },
               {
@@ -143,7 +143,7 @@ export function HeroSection() {
                 startLng: -79.3832,
                 endLat: 48.8566,
                 endLng: 2.3522,
-                arcAlt: 0.4,
+                arcAlt: 0.2, // Reduced from 0.4
                 color: theme === "dark" ? "#06b6d4" : "#06b6d4",
               },
             ]}

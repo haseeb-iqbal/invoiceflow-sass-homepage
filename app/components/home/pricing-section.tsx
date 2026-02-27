@@ -15,7 +15,7 @@ export function PricingSection() {
     {
       name: "Starter",
       monthlyPrice: 19,
-      annualPrice: 190,
+      annualPrice: 189,
       description: "Perfect for getting started",
       features: [
         "Up to 10 clients",
@@ -27,7 +27,7 @@ export function PricingSection() {
     {
       name: "Professional",
       monthlyPrice: 39,
-      annualPrice: 390,
+      annualPrice: 379,
       description: "For growing businesses",
       features: [
         "Unlimited clients",
