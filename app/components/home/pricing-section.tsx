@@ -80,29 +80,6 @@ export function PricingSection() {
 
           <div className="inline-flex rounded-full border-2 border-border bg-card  shadow-sm">
             <BillingToggle onChange={(val) => setBillingPeriod(val)} />
-            {/* <button
-              onClick={() => setBillingPeriod("monthly")}
-              className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
-                billingPeriod === "monthly"
-                  ? "bg-primary text-primary-foreground shadow-md"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              Monthly
-            </button>
-            <button
-              onClick={() => setBillingPeriod("annual")}
-              className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
-                billingPeriod === "annual"
-                  ? "bg-primary text-primary-foreground shadow-md"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              Annual
-              <span className="ml-2 text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full">
-                2 months free
-              </span>
-            </button> */}
           </div>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -118,7 +95,7 @@ export function PricingSection() {
               {plan.highlighted && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                   <span className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-1.5 rounded-full text-xs font-semibold shadow-md">
-                    ?. Most popular
+                    Most popular
                   </span>
                 </div>
               )}
