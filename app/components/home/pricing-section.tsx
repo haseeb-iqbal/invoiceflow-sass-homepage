@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import BillingToggle from "../billing-toggle";
 
 export function PricingSection() {
   const [billingPeriod, setBillingPeriod] = useState<"monthly" | "annual">(
@@ -77,8 +78,9 @@ export function PricingSection() {
             Choose the perfect plan for your needs. Always flexible.
           </p>
 
-          <div className="inline-flex rounded-full border-2 border-border bg-card p-1.5 shadow-sm">
-            <button
+          <div className="inline-flex rounded-full border-2 border-border bg-card  shadow-sm">
+            <BillingToggle onChange={(val) => setBillingPeriod(val)} />
+            {/* <button
               onClick={() => setBillingPeriod("monthly")}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
                 billingPeriod === "monthly"
@@ -100,10 +102,9 @@ export function PricingSection() {
               <span className="ml-2 text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full">
                 2 months free
               </span>
-            </button>
+            </button> */}
           </div>
         </div>
-
         <div className="grid md:grid-cols-3 gap-8">
           {pricingPlans.map((plan, index) => (
             <div
