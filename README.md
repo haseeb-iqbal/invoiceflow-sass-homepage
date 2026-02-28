@@ -1,30 +1,12 @@
-# SaaS landing page
+# InvoiceFlow Sass Landing Page
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+### Description
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/haseebiqbals-projects/v0-atlas-saas)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/d9WAJ7lDcwE)
+A fully responsive landing page for a fictional SasS, InvoiceFlow, created by me ([Haseeb Iqbal](https://github.com/haseeb-iqbal)). I decided to create this as a fun experiment and do some test trials of custom animations and neat components.
 
-## Overview
+### Stack
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
-
-## Deployment
-
-Your project is live at:
-
-**[https://vercel.com/haseebiqbals-projects/v0-atlas-saas](https://vercel.com/haseebiqbals-projects/v0-atlas-saas)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/d9WAJ7lDcwE](https://v0.app/chat/d9WAJ7lDcwE)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Primary: Next.js, Typescript
+Styling: Tailwind CSS, shadcn, acceternity UI
+Animation: Motion
+Deployment: Vercel, Github
