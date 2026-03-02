@@ -41,7 +41,7 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              className="rounded-full h-12 border-2 border-primary text-primary hover:bg-primary/3 hover:text-primary font-semibold transition-all bg-transparent"
+              className="rounded-full h-12 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold transition-all bg-transparent"
             >
               Watch demo
             </Button>
