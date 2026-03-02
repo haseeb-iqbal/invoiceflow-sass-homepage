@@ -17,10 +17,17 @@ export function FinalCtaSection() {
           <div className="relative rounded-full p-1">
             <Button
               size="lg"
-              className="rounded-full bg-primary-foreground text-primary hover:bg-primary-foreground/95 font-semibold shadow-lg "
+              className="rounded-full bg-primary-foreground text-primary hover:bg-primary-foreground/95 font-semibold shadow-lg"
+              asChild
             >
-              Start free trial
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <a
+                href="https://github.com/haseeb-iqbal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>Start free trial </p>
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </Button>
             <BorderBeam
               size={40}
@@ -34,8 +41,15 @@ export function FinalCtaSection() {
               size="lg"
               variant="outline"
               className="rounded-full text-primary-foreground border-2 border-primary-foreground/40 hover:bg-primary-foreground/15 bg-transparent font-semibold backdrop-blur-sm"
+              asChild
             >
-              View demo
+              <a
+                href="https://github.com/haseeb-iqbal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View demo
+              </a>
             </Button>
           </div>
         </div>
