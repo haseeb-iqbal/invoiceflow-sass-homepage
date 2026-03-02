@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function FooterSection() {
   return (
@@ -156,16 +157,21 @@ export function FooterSection() {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>Ac 2026 InvoiceFlow. All rights reserved.</p>
+          <p>© 2026 InvoiceFlow. All rights reserved.</p>
           <div className="flex gap-6 mt-4 sm:mt-0">
-            <Link href="#" className="hover:text-foreground transition-colors">
-              Twitter
+            <Link
+              href="https://github.com/haseeb-iqbal"
+              target="_blank"
+              className="hover:text-foreground transition-colors"
+            >
+              <FaGithub className="h-6 w-6" />
             </Link>
-            <Link href="#" className="hover:text-foreground transition-colors">
-              GitHub
-            </Link>
-            <Link href="#" className="hover:text-foreground transition-colors">
-              LinkedIn
+            <Link
+              href="https://www.linkedin.com/in/haseeb-iqbal-web/"
+              target="_blank"
+              className="hover:text-foreground transition-colors"
+            >
+              <FaLinkedin className="h-6 w-6" />
             </Link>
           </div>
         </div>

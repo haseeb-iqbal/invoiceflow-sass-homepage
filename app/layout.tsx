@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   title: "InvoiceFlow",
   description:
     "InvoiceFlow - Smarter Invoicing for Small Businesses. Fast, secure, and trusted by 5,000+ companies.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -20,6 +19,20 @@ export const metadata: Metadata = {
         type: "image/svg+xml",
       },
     ],
+  },
+  keywords: [
+    "invoicing software",
+    "invoice generator",
+    "small business",
+    "billing",
+    "payment tracking",
+    "cash flow management",
+  ],
+  authors: [{ name: "Haseeb Iqbal" }],
+  creator: "Haseeb Iqbal",
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
