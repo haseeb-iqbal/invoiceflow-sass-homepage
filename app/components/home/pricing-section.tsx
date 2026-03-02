@@ -141,7 +141,7 @@ export function PricingSection() {
                   className={`w-full rounded-full mb-8 font-semibold transition-all ${
                     plan.highlighted
                       ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-md"
-                      : "border-accent text-primary hover:bg-primary/5"
+                      : "border-accent text-primary hover:bg-primary hover:text-primary-foreground hover:border-primary"
                   }`}
                   variant={plan.highlighted ? "default" : "outline"}
                 >
