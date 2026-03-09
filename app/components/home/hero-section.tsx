@@ -20,11 +20,11 @@ export function HeroSection() {
     >
       <div className="mx-auto max-w-6xl flex flex-col lg:flex-row items-center lg:items-start lg:space-x-16 z-1">
         <div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance leading-tight mb-6 text-foreground ">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance leading-tight mb-6 text-foreground text-center lg:text-left">
             Get paid faster with smarter invoicing
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground text-balance mb-10 leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground text-balance mb-10 leading-relaxed text-center lg:text-left">
             Create invoices, track payments, and understand your cash flow in
             real time. InvoiceFlow helps small businesses stay organised and get
             paid on time.
@@ -33,7 +33,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button
               size="lg"
-              className="rounded-full h-12 bg-primary  text-primary-foreground font-semibold shadow-md hover:shadow-lg transition-all"
+              className="rounded-full h-12 bg-primary text-primary-foreground font-semibold shadow-md hover:shadow-lg transition-all"
             >
               Get started
               <ArrowRight className="ml-2 h-4 w-4" />
