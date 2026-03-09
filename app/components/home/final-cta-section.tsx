@@ -4,7 +4,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 
 export function FinalCtaSection() {
   return (
-    <section className="border-t border-border bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-4 py-24 sm:px-6 lg:px-8">
+    <section className="border-t border-border bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-4 lg:py-24 py-8 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-4xl sm:text-5xl font-bold mb-6">
           Ready to simplify invoicing?
