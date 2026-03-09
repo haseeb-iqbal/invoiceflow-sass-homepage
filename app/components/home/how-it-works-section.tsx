@@ -42,10 +42,10 @@ export function HowItWorksSection() {
   return (
     <section
       id="how-it-works"
-      className="border-y border-border bg-muted/30 px-4 py-24 sm:px-6 lg:px-8"
+      className="border-y border-border bg-muted/30 px-4 lg:py-24 py-8 sm:px-6 lg:px-8"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-16 text-center">
+        <div className="lg:mb-16 mb-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             Get started in minutes
           </h2>
