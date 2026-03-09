@@ -43,6 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      {/* This is needed to prevent hydration mismatch due to theme changes */}
       <body className={`font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
