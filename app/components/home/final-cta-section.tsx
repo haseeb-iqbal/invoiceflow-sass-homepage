@@ -14,7 +14,7 @@ export function FinalCtaSection() {
           faster.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <div className="relative rounded-full p-1">
+          <div className="relative rounded-full p-1 mx-auto">
             <Button
               size="lg"
               className="rounded-full bg-primary-foreground text-primary hover:bg-primary-foreground/90 hover:shadow-xl font-semibold shadow-lg"
