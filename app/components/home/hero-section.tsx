@@ -47,7 +47,7 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="w-full max-w-2xl h-[400px] lg:h-[500px]">
+        <div className="w-full max-w-2xl h-[250px] sm:h-[300px] md:h-[350px] lg:h-[500px]">
           <World
             key={theme}
             globeConfig={{
