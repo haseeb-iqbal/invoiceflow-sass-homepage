@@ -30,7 +30,7 @@ export function HeroSection() {
             paid on time.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
+          <div className="flex flex-col md:flex-row md:justify-center lg:justify-start gap-4 mb-16">
             <Button
               size="lg"
               className="rounded-full h-12 bg-primary text-primary-foreground font-semibold shadow-md hover:shadow-lg transition-all"
