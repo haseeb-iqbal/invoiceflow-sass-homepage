@@ -55,13 +55,13 @@ export function FeaturesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <div
                 key={index}
-                className="group relative rounded-lg border border-border bg-card p-6 hover:border-accent/40 hover:shadow-lg transition-all duration-300 text-center lg:text-left"
+                className="group relative rounded-lg border border-border bg-card p-3 lg:p-6 hover:border-accent/40 hover:shadow-lg transition-all duration-300 text-center lg:text-left"
               >
                 <div className="mb-4 inline-flex rounded-lg bg-gradient-to-br from-primary/15 to-accent/10 p-3 group-hover:from-primary/20 group-hover:to-accent/15 transition-all lg:mx-0 mx-auto">
                   <Icon className="h-5 w-5 text-primary group-hover:text-accent transition-colors" />

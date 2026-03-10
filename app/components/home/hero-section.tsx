@@ -16,7 +16,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden px-4 pt-12 pb-10 sm:px-6 lg:px-8 flex"
+      className="relative overflow-hidden px-4 pt-4 lg:pt-12 pb-10 sm:px-6 lg:px-8 flex"
     >
       <div className="mx-auto max-w-6xl flex flex-col lg:flex-row items-center lg:items-start lg:space-x-16 z-1">
         <div>
@@ -47,7 +47,7 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="w-full max-w-2xl h-[250px] sm:h-[300px] md:h-[350px] lg:h-[500px]">
+        <div className="w-full -mb-10 -mt-16 lg:mb-0 lg:mt-0 max-w-2xl h-[250px] sm:h-[300px] md:h-[350px] lg:h-[500px]">
           <World
             key={theme}
             globeConfig={{
