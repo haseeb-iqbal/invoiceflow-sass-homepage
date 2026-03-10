@@ -117,7 +117,7 @@ export function Navbar() {
 
       {/* Mobile Dropdown */}
       {isMenuOpen && (
-        <div className="absolute left-0 right-0 top-16 animate-in slide-in-from-top-2 fade-in-0 duration-200 border-t border-border bg-background shadow-lg lg:hidden">
+        <div className="absolute left-0 right-0 top-16 animate-in slide-in-from-top-2 fade-in-0 duration-200 border-t border-border bg-background shadow-lg lg:hidden border-b">
           <div className="container max-w-7xl space-y-1 px-4 py-4">
             {navItems.map((item) => (
               <Link
