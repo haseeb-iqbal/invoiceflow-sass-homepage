@@ -2,150 +2,141 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
   if (!element) return;
 
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    element.scrollIntoView({ behavior: "auto" });
-    return;
-  }
+  const navbarHeight = 64; // h-16 = 64px
+  const elementPosition = element.offsetTop - navbarHeight;
 
-  const startY = window.scrollY;
-  const targetY = element.getBoundingClientRect().top + window.scrollY;
-  const distance = targetY - startY;
-  const duration = 1200;
-  const startTime = performance.now();
-
-  const easeInOutCubic = (t: number) =>
-    t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-
-  const step = (time: number) => {
-    const elapsed = time - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased = easeInOutCubic(progress);
-    window.scrollTo(0, startY + distance * eased);
-    if (progress < 1) {
-      requestAnimationFrame(step);
-    }
-  };
-
-  requestAnimationFrame(step);
+  window.scrollTo({
+    top: elementPosition,
+    behavior: "smooth",
+  });
 };
+
+const navItems = [
+  { href: "#features", label: "Features" },
+  { href: "#how-it-works", label: "How it works" },
+  { href: "#pricing", label: "Pricing" },
+  { href: "#faq", label: "FAQ" },
+];
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
+    const id = href.replace("#", "");
+    scrollToSection(id);
+    setIsMenuOpen(false);
+  };
+
   return (
-    <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-8">
-          <Link
-            href="/"
-            className="flex items-center gap-1 text-xl font-bold tracking-tight text-foreground transition-colors"
-            onClick={() => scrollToSection("hero")}
-          >
-            <Image
-              src="/icon.svg"
-              alt="InvoiceFlow logo"
-              width={24}
-              height={24}
-              className="h-6 w-6"
-              priority
-            />
-            <span className="italic">InvoiceFlow</span>
-          </Link>
-          <div className="hidden md:flex gap-8">
-            <Link
-              href="#features"
-              onClick={() => scrollToSection("features")}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
-              Features
-            </Link>
-            <Link
-              href="#how-it-works"
-              onClick={() => scrollToSection("how-it-works")}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
-              How it works
-            </Link>
-            <Link
-              href="#pricing"
-              onClick={() => scrollToSection("pricing")}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
-              Pricing
-            </Link>
-            <Link
-              href="#faq"
-              onClick={() => scrollToSection("faq")}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
-              FAQ
-            </Link>
-          </div>
+    <nav className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="flex items-center gap-1.5 text-xl font-bold tracking-tight transition-colors hover:opacity-80"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("hero");
+          }}
+        >
+          <Image
+            src="/icon.svg"
+            alt="InvoiceFlow logo"
+            width={24}
+            height={24}
+            className="h-6 w-6"
+            priority
+          />
+          <span className="italic">InvoiceFlow</span>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <NavigationMenu className="hidden lg:flex">
+          <NavigationMenuList>
+            {navItems.map((item) => (
+              <NavigationMenuItem key={item.href}>
+                <NavigationMenuLink
+                  href={item.href}
+                  className={navigationMenuTriggerStyle()}
+                  onClick={(e) => handleNavClick(e, item.href)}
+                >
+                  {item.label}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
+
+        {/* Desktop Actions */}
+        <div className="hidden items-center gap-3 lg:flex">
+          <ThemeToggle />
+          <Button variant="ghost" className="text-sm font-medium">
+            Sign in
+          </Button>
+          <Button className="rounded-full shadow-md">Start free</Button>
         </div>
 
-        <div className="hidden md:flex items-center gap-4">
+        {/* Mobile Menu */}
+        <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
-          <button className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium">
-            Sign in
-          </button>
-          <Button className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-md">
-            Start free
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-9 w-9"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
           </Button>
         </div>
-
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden p-2"
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
       </div>
 
+      {/* Mobile Dropdown */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-border bg-background">
-          <div className="px-4 py-4 space-y-4">
-            <Link
-              href="#features"
-              onClick={() => scrollToSection("features")}
-              className="block text-sm text-muted-foreground hover:text-foreground"
-            >
-              Features
-            </Link>
-            <Link
-              href="#how-it-works"
-              onClick={() => scrollToSection("how-it-works")}
-              className="block text-sm text-muted-foreground hover:text-foreground"
-            >
-              How it works
-            </Link>
-            <Link
-              href="#pricing"
-              onClick={() => scrollToSection("pricing")}
-              className="block text-sm text-muted-foreground hover:text-foreground"
-            >
-              Pricing
-            </Link>
-            <Link
-              href="#faq"
-              onClick={() => scrollToSection("faq")}
-              className="block text-sm text-muted-foreground hover:text-foreground"
-            >
-              FAQ
-            </Link>
-            <button className="block text-sm text-muted-foreground hover:text-foreground">
-              Sign in
-            </button>
-            <Button className="w-full rounded-full">Start free</Button>
+        <div className="absolute left-0 right-0 top-16 animate-in slide-in-from-top-2 fade-in-0 duration-200 border-t border-border bg-background shadow-lg lg:hidden">
+          <div className="container max-w-7xl space-y-1 px-4 py-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="block rounded-md px-3 py-2 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <div className="flex flex-col gap-2 border-t pt-4">
+              <Button variant="outline" className="w-full justify-center">
+                Sign in
+              </Button>
+              <Button className="w-full justify-center rounded-full">
+                Start free
+              </Button>
+            </div>
           </div>
         </div>
       )}
