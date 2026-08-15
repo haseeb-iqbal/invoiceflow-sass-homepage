@@ -6,7 +6,7 @@ A fully responsive landing page for a fictional SasS, InvoiceFlow, created by me
 
 ### Stack
 
-Primary: Next.js, Typescript
-Styling: Tailwind CSS, shadcn, acceternity UI
-Animation: Motion
-Deployment: Vercel, Github
+Primary: Next.js, Typescript<br/>
+Styling: Tailwind CSS, shadcn, acceternity UI<br/>
+Animation: Motion<br/>
+Deployment: Vercel, Github<br/>
